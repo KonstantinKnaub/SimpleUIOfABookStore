@@ -1,0 +1,21 @@
+<div class="summary">
+  <div class="summary-total-items"><span class="total-items"></span> Items in your Bag</div>
+  <div class="summary-subtotal">
+    <div class="subtotal-title">Subtotal</div>
+    <div class="subtotal-value final-value" id="basket-subtotal">{{price.toFixed(2)}}</div>
+    <div class="input-group input-group-sm mb-3">
+      <input type="text" class="form-control" aria-label="promocode" aria-describedby="inputGroup-sizing-sm" placeholder="promo code">
+    </div>
+  </div>
+  <ul *ngFor="let book of names">
+    <li>{{book.fname }}</li>
+    <li>{{book.Unitprice}}</li>
+  </ul>
+  <div class="summary-total">
+    <div class="total-title">Total</div>
+    <div class="total-value final-value" id="basket-total">{{price.toFixed(2)}}</div>
+  </div>
+  <div class="summary-checkout">
+    <button class="checkout-cta">Go to Secure Checkout</button>
+  </div>
+</div>

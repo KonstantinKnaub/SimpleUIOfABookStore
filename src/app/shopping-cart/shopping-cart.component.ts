@@ -1,0 +1,15 @@
+import {Component, Input, OnInit} from '@angular/core';
+
+@Component({
+  selector: 'app-shopping-cart',
+  templateUrl: './shopping-cart.component.html',
+  styleUrls: ['./shopping-cart.component.css']
+})
+export class ShoppingCartComponent {
+  @Input() names = [];
+  @Input() price = 0;
+  constructor() { }
+
+
+
+}

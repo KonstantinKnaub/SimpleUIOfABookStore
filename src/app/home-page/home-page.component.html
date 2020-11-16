@@ -1,0 +1,104 @@
+
+
+
+<div class="container d-flex justify-content-end">
+  <app-shopping-cart [names]="booknames" [price]="calculatedPrice"></app-shopping-cart>
+</div>
+      <div class="card-group">
+      <div class="row">
+        <div class="col" >
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" [src]=imageURL alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Web design with HTML, CSS, JavaScript</p>
+              <p clas="card-text">49,42 CA$</p>
+              <button type="button" class="btn btn-outline-secondary" (click)="addValue(49.42)" (click)="addName('Web design with HTML, CSS, JavaScript', 49.42)">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col" >
+          <div class="card" style="width: 18rem; ">
+            <img class="card-img-top" [src]=imageURL alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">SQL QuickStart Guide: The Simplified Beginner's Guide</p>
+              <p clas="card-text">19,95 CA$</p>
+              <button type="button" class="btn btn-outline-secondary" (click)="addValue(19.95)" (click)="addName('SQL QuickStart Guide: The Simplified Beginner\'s Guide', 19.95)">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem; ">
+            <img class="card-img-top" [src]=imageURL alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Machine Learning The Ultimate Beginner's Guide </p>
+              <p clas="card-text">14,95 CA$</p>
+              <button type="button" class="btn btn-outline-secondary" (click)="addValue(14.95)" (click)="addName('Machine Learning The Ultimate Beginner\'s Guide', 14.95)">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" >
+          <div class="card" style="width: 18rem; ">
+            <img class="card-img-top" [src]=imageURL alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Linux: The Ultimate Beginner's Guide to Learn Linux </p>
+              <p clas="card-text">16,55 CA$</p>
+              <button type="button" class="btn btn-outline-secondary" (click)="addValue(16.55)" (click)="addName('Linux: The Ultimate Beginner\'s Guide to Learn Linux', 16.55)">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col" >
+          <div class="card" style="width: 18rem;" >
+            <img class="card-img-top" [src]=imageURL alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">
+                C++: The Ultimate Beginner's Guide to Learn C++</p>
+              <p clas="card-text">14,95 CA$</p>
+              <button type="button" class="btn btn-outline-secondary" (click)="addValue(14.95)" (click)="addName('C++: The Ultimate Beginner\'s Guide to Learn C++', 14.95)">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card" style="width: 18rem; ">
+            <img class="card-img-top" [src]=imageURL alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text">Programming in C, data structure and algorithms</p>
+              <p clas="card-text">61,65 CA$</p>
+              <button type="button" class="btn btn-outline-secondary" (click)="addValue(61.65)" (click)="addName('Programming in C, data structure and algorithms', 61.65)">
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-cart" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm7 0a1 1 0 1 0 0 2 1 1 0 0 0 0-2z"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
